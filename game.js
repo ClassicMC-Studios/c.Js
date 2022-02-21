@@ -1,0 +1,1 @@
+const cjs = new Cjs();
