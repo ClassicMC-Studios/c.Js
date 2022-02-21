@@ -145,5 +145,4 @@ class Cjs{
         }
     }
 }
-const cjs = new Cjs();
 
