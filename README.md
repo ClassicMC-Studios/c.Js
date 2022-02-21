@@ -10,7 +10,7 @@ Download the repository and open the game.js file
   There are 32 squares that can be modified
   cjs.clear(); will reset the squares back to the main color
   cjs.rect(); has 2 modifiers Number & Color
-  the number modifier will will select which of the 32 squares gets modified
+  the number modifier will will select which of the 48 squares gets modified
   the Color modifier will will choose the color of the square using Hex
   For example cjs.rect(1,"#ff0000"); will make the first square in the screen red.
 
