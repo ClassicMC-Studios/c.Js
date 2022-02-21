@@ -13,7 +13,7 @@ class Cjs{
             c.fillRect(tx,ty,50,50);
             tx += 70;
         }
-        for(let step = 0;step<3;step++){
+        for(let step = 0;step<5;step++){
             ty += 70
             tx = 580
             for(let step = 0;step<8;step++){
@@ -33,7 +33,7 @@ class Cjs{
             c.fillRect(tx,ty,50,50);
             tx += 70;
         }
-        for(let step = 0;step<3;step++){
+        for(let step = 0;step<5;step++){
             ty += 70
             tx = 580
             for(let step = 0;step<8;step++){
@@ -142,6 +142,56 @@ class Cjs{
         }
         if(num == 32){
             c.fillRect(90+490,100+210,50,50);
+        }
+        //4
+        if(num == 33){
+            c.fillRect(90,100+280,50,50);
+        }
+        if(num == 34){
+            c.fillRect(90+70,100+280,50,50);
+        }
+        if(num == 35){
+            c.fillRect(90+140,100+280,50,50);
+        }
+        if(num == 36){
+            c.fillRect(90+210,100+280,50,50);
+        }
+        if(num == 37){
+            c.fillRect(90+280,100+280,50,50);
+        }
+        if(num == 38){
+            c.fillRect(90+350,100+280,50,50);
+        }
+        if(num == 39){
+            c.fillRect(90+420,100+280,50,50);
+        }
+        if(num == 40){
+            c.fillRect(90+490,100+280,50,50);
+        }
+        //5
+        if(num == 41){
+            c.fillRect(90,100+350,50,50);
+        }
+        if(num == 42){
+            c.fillRect(90+70,100+350,50,50);
+        }
+        if(num == 43){
+            c.fillRect(90+140,100+350,50,50);
+        }
+        if(num == 44){
+            c.fillRect(90+210,100+350,50,50);
+        }
+        if(num == 45){
+            c.fillRect(90+280,100+350,50,50);
+        }
+        if(num == 46){
+            c.fillRect(90+350,100+350,50,50);
+        }
+        if(num == 47){
+            c.fillRect(90+420,100+350,50,50);
+        }
+        if(num == 48){
+            c.fillRect(90+490,100+350,50,50);
         }
     }
 }
