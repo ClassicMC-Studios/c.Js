@@ -5,7 +5,7 @@ class Cjs{
     constructor(){
         c.fillStyle = "white";
         c.fillRect(0,0,720,480);
-        c.fillStyle = "black";
+        c.fillStyle = "lightgray";
         let generate = 1;
         let tx = 90 
         let ty = 100 
@@ -25,7 +25,7 @@ class Cjs{
     clear(){
         c.fillStyle = "white";
         c.fillRect(0,0,720,480);
-        c.fillStyle = "black";
+        c.fillStyle = "lightgray";
         let generate = 1;
         let tx = 90 
         let ty = 100 
@@ -194,5 +194,28 @@ class Cjs{
             c.fillRect(90+490,100+350,50,50);
         }
     }
-}
+    backGround(color){
+        let pos = 1;
+        for(let step = 0; step < 48;step ++){
+            this.rect(pos,color);
+            pos ++;
+        }
+    }
+    text(text,x,y,color = "lightgray"){
+        c.fillStyle = color;
+        c.font = 'bold 24px sans serif';
+        c.fillText(text,x,y);
+    }
+    end(){
+        let end = true;
+        c.fillStyle = "white";
+        c.fillRect(0,0,720,500);
+        while (end){
 
+        }
+    }
+    getRandomInt(max) {
+        return Math.floor(Math.random() * max);
+    }
+    
+}
