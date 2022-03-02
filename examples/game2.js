@@ -2,6 +2,7 @@ const cjs = new Cjs();
 let position = 10;
 let pip = "no";
 let pipos = 16;
+let pipeType = 2;
 class Player{
     draw(pos){
         cjs.rect(pos,"#ff9900");
@@ -28,8 +29,13 @@ function redraw(){
         cjs.rect(steps,"#00cc00");
     }
     plyr.draw(position);
-    cjs.rect(pipos,"#00cc00");
-
+    if(pipeType == 1){
+        cjs.rect(pipos,"#00cc00");
+    }
+    if(pipeType == 2){
+        cjs.rect(pipos+8,"#00cc00");
+        cjs.rect(pipos,"#00cc00");
+    }
 }
 window.main = function (){
     window.requestAnimationFrame( main );
@@ -38,11 +44,23 @@ window.main = function (){
         redraw();
         cjs.end();
     }
+    if(pipeType == 2){
+    if(position == pipos+8||position-1 == pipos+8){
+        redraw();
+        cjs.end();
+    }
+    }
 }
 let interval = setInterval(decreaseTimer, 1000);
-
+let oInter = setInterval(type,8000);
 function decreaseTimer() {
     newPipe();
+}
+function type(){
+    pipeType = cjs.getRandomInt(3);
+    if(pipeType == 0){
+        pipeType = 1;
+    }
 }
 document.addEventListener('keydown', function (evt){
     if(event.keyCode == 40){
@@ -58,7 +76,8 @@ document.addEventListener('keydown', function (evt){
         position += 1;
     }
     if(event.keyCode == 68){
-        alert(pipos+"OS   POS"+position)
+        //alert(pipos+"OS   POS"+position)
+        //alert(pipeType);
     }
 });
 main();
