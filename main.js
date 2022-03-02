@@ -211,11 +211,18 @@ class Cjs{
         c.fillStyle = "white";
         c.fillRect(0,0,720,500);
         while (end){
-
+            //This code breaks the entire Js website
         }
     }
     getRandomInt(max) {
         return Math.floor(Math.random() * max);
     }
-    
+    touching(pos, oPos){
+        if(pos==oPos){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 }
