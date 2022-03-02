@@ -15,4 +15,4 @@ Download the repository and open the game.js file <br />
   the Color modifier will will choose the color of the square using Hex <br />
   For example cjs.rect(1,"#ff0000"); will make the first square in the screen red. <br />
   The rest of the commands are just extras <br />
-And thats about it.
+  ![screenshot](screenshots/extra.png)
