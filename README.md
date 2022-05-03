@@ -1,6 +1,6 @@
 # c.Js
-A mini game engine inspired by, 24a2 by, jamesroutley made as a test Idea thingy.
-# ?
+>A mini game engine inspired by, **[24a2](https://24a2.routley.io/)** by, jamesroutley made as a test Idea thingy.
+## ?
 c.Js is a tiny Js game engine thing inspired by, 24a2 that was designed to not be very large.   <br />
 It can be used in TypeScript orJavaScript.
 ## How do I use it?
